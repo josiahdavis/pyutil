@@ -12,7 +12,10 @@ if __name__ == "__main__":
     # Setting options
     parser.add_argument("--model", default="ppo", choices=["ppo", "es", "ars"], help="My learning algorithm")
     
-    # Bool
+    # Bool Option #1
+    parser.add_argument('--gpu', action='store_true')
+    
+    # Bool Option #2
     parser.add_argument(
         "--mybool",
         dest="mybool",
